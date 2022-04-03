@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7D66A6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Heading"
+        android:layout_width="295dp"
+        android:layout_height="145dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Engage People"
+        android:textAlignment="center"
+        android:textColor="#F8F8F8"
+        android:textColorHint="#FF2121"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="213dp"
+        android:layout_height="219dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Heading"
+        app:srcCompat="@drawable/hands" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="119dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="28dp"
+        android:onClick="login"
+        android:text="ଲଗଇନ୍ କରନ୍ତୁ"
+        app:cornerRadius="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="153dp"
+        android:layout_height="68dp"
+        android:onClick="register"
+        android:shadowColor="#0C0A0A"
+        android:shadowRadius="12"
+        android:text="ପଞ୍ଜିକରଣ କରନ୍ତୁ"
+        android:textSize="16sp"
+        app:cornerRadius="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        app:layout_constraintVertical_bias="0.232" />
+</androidx.constraintlayout.widget.ConstraintLayout>
